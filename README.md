@@ -6,7 +6,7 @@
 ## Features
 
 ##### 1. Login And Logout
-##### 2. Registraion
+##### 2. Registration
 
 
 ## Version
