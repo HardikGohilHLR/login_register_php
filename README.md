@@ -30,3 +30,16 @@
 #### Email - admin@admin.com
 
 #### Password - password
+
+## Important Note
+
+##### If you foud any error or warning like below
+
+'Warning: mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in D:\XAMPP\htdocs\login_register_php\db.php on line 4
+Not connected.'
+
+##### Then it may be the reason that your phpMyAdmin database is password protected, you have to give password for root user in the [db.php](login_register_php/db.php) file. For that you have to add password in the 'your password here' field like below.
+```
+$conn = mysqli_connect('localhost','root','your password here','login') or die("Not connected.");
+```
+##### Now you're good to go. 
